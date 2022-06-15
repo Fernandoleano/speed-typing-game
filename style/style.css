@@ -1,0 +1,75 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(to right, #434343 0%, black 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+body, .quoteinput {
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    background-color: rgb(49, 47, 51);
+    padding: 1rem;
+    border-radius: .5rem;
+    width: 700px;
+    max-width: 90%;
+}
+
+.timer {
+    position: absolute;
+    top: 2rem;
+    font-size: 5rem;
+    color: limegreen;
+    font-weight: bold;
+}
+
+.quotedisplay {
+    margin-bottom: 1rem;
+    margin-left: calc(1rem + 2px);
+    margin-right: calc(1rem + 2px);
+    color: yellow;
+    font-size: 21px;
+}
+
+.quoteinput {
+    background-color: transparent;
+    width: 100%;
+    padding: 1rem;
+    outline: none;
+    border: 2px solid #434343;
+    height: 10rem;
+    margin: auto;
+    resize: none;
+    padding: .5rem 1rem;
+    color: white;
+    font-size: 21px;
+    border-radius: .5rem;
+}
+
+.quoteinput:focus {
+    border-color: black;
+}
+
+.correct {
+    color: green;
+    font-weight: bold;
+}
+
+.incorrect {
+    font-weight: bold;
+    color: red;
+}
+
+h1 {
+    position: absolute;
+    bottom: 21;
+    color: white;
+}
